@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Converter</title>
+</head>
+
+<style>
+    button{
+    }
+      body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            
+        }
+        .container-flex {
+         display: flex;
+        flex-direction: column;
+        }
+</style>
+<body>
+    <div class="container-flex">
+        <h1>Upload and Transform Your Image</h1>
+    <div class="container">
+        <h4>Choose an image: </h4>
+        <input type="file" id="imageUpload" accept="image/*">
+    <h4>Choose an option: </h4>
+    <select id="effect" style="width: 100%; padding: 10px 20px; background-color: #f2f2f2;">
+        <option value="grayscale">Grayscale</option>
+        <option value="blur">Blur</option>
+    </select> <br><br>
+    <button 
+    style="background-color: #3571bb; color: white; padding: 10px 20px; border: none; border-radius: 5px; width: 100%;"  
+    onclick="convertImage()">Upload and Convert</button>
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
